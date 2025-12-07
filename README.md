@@ -129,7 +129,7 @@ URL for Eclipse JEE: [Mirror 1045](https://www.eclipse.org/downloads/download.ph
 - Eclipse Update site: 2025-09 - https://download.eclipse.org/releases/2025-09
 - Update site ADT https://tools.hana.ondemand.com/latest
 - Update site ABAP Cleaner https://sap.github.io/abap-cleaner/updatesite
-- Update site ABAP Quick Fix https://fidley.github.io/ADTPluginsUpdateSite/UpdateSite/
+- Update site ABAP Quick Fix, Favorites, Commands https://fidley.github.io/ADTPluginsUpdateSite/UpdateSite/
 - Update site Additional Quick Fixes S4 Conversion https://leuc.de/abapquickfixs4c
 
 ### ADT feature IDs
@@ -161,6 +161,10 @@ The [DSAG ADT Guide / Leitfaden](https://1dsag.github.io/ADT-Leitfaden/plug-ins/
 ### ABAP Quick Fixes S4 Conversion
 
 - de.leuc.adt.quickfix.feature.group
+
+### ABAP Favorites
+
+- ABAP_Favorites_Feature_Project.feature.group
 
 ### (to be added)
 
@@ -204,6 +208,6 @@ p2 Director Application: **eclipsec.exe**
 Command:
 
 ```sh
-build\eclipse\eclipsec.exe -application org.eclipse.equinox.p2.director -repository https://download.eclipse.org/releases/2025-09,https://tools.hana.ondemand.com/latest,https://sap.github.io/abap-cleaner/updatesite,https://fidley.github.io/ADTPluginsUpdateSite/UpdateSite/,https://leuc.de/abapquickfixs4c -installIU com.sap.adt.tools.bopf.devedition.feature.group,com.sap.adt.core.devedition.feature.group,com.sap.adt.tools.hana.devedition.feature.group,com.sap.adt.wda.core.devedition.feature.group,com.sap.adt.pitools.tlf.devedition.feature.group,com.sap.adt.abapcleaner.feature.feature.group,com.abapblog.adt.quickfix.feature.feature.group,com.abapblog.adt.extension.feature.feature.group,de.leuc.adt.quickfix.feature.group -tag AddADT -destination .\\build\\eclipse -profile epp.package.jee -tag AddADT -destination .\\build\\eclipse -profile epp.package.jee
+build\eclipse\eclipsec.exe -application org.eclipse.equinox.p2.director -repository https://download.eclipse.org/releases/2025-09,https://tools.hana.ondemand.com/latest,https://sap.github.io/abap-cleaner/updatesite,https://fidley.github.io/ADTPluginsUpdateSite/UpdateSite/,https://leuc.de/abapquickfixs4c -installIU com.sap.adt.tools.bopf.devedition.feature.group,com.sap.adt.core.devedition.feature.group,com.sap.adt.tools.hana.devedition.feature.group,com.sap.adt.wda.core.devedition.feature.group,com.sap.adt.pitools.tlf.devedition.feature.group,com.sap.adt.abapcleaner.feature.feature.group,com.abapblog.adt.quickfix.feature.feature.group,com.abapblog.adt.extension.feature.feature.group,de.leuc.adt.quickfix.feature.group,ABAP_Favorites_Feature_Project.feature.group -tag AddADTBundle -destination .\\build\\eclipse -profile epp.package.jee -destination .\\build\\eclipse -profile epp.package.jee
 ```
 
